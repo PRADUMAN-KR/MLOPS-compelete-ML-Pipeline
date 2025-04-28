@@ -1,0 +1,12 @@
+building pipeline:
+    creatin the github repo and cloning it(add a foler experiments)
+    add src folder along with the all the components(run them individually)
+    inside the src 
+        make a data_ingestion.py file which will see 
+        preprocessing.py
+        feature_engineering.py
+        model_training.py
+        model_evaluation.py
+
+    add data,models,report dir to .gitignore file
+
