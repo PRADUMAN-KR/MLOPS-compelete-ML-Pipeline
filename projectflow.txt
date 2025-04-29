@@ -12,9 +12,14 @@ building pipeline:
     commit the changes in the github
 
 set the DVC pipeline(without params)
-        create a dvc.yaml file and stage to it 
-        dvc init then dvc repro to test the pipeline automation(check the dvc dag)
-        now git add,commit,push
+    create a dvc.yaml file and stage to it 
+    "dvc init" then "dvc repro" to test the pipeline automation(check the "dvc dag")
+    now git add,commit,push
         
+setting the dvc pipeline with the params
+    create a params.yaml file
+    add the params setup
+    do the dvc repro again to check the pipeline along with the params
+    now git add,commit,push
 
 
