@@ -9,4 +9,12 @@ building pipeline:
         model_evaluation.py
 
     add data,models,report dir to .gitignore file
+    commit the changes in the github
+
+set the DVC pipeline(without params)
+        create a dvc.yaml file and stage to it 
+        dvc init then dvc repro to test the pipeline automation(check the dvc dag)
+        now git add,commit,push
+        
+
 
