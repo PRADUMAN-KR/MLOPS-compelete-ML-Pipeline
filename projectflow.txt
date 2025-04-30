@@ -29,7 +29,19 @@ experimenting with the DVC:
     run "dvc exp show" to see the experiments or use dvc extension in VSCode
     do "dvc exp remove {exp-name}" to remove the exp (optional)
     dvc exp apply {exp-name} to reproduce the desired exp
-    change the params and re-run the code(produce new exp)
-    noe git add,commit and push
+    change the params and re-run the code(reproduce new exp)
+    now git add,commit and push
 
+
+adding the remote storage system(aws,GCP,etc)
+-->  login to aws 
+-->  create a IAMUser
+-->  create S3 bucket(give name to it example:- yt-mlops-dvc-s3)
+-->  "pip install dvc[s3]"
+-->  "pip install awscli"
+-->  "aws configure" - on terminal(give the access id and access secret key)
+-->  "dvc remote add -d dvcstore s3://<name of the bucket>" ("dvc remote add -d --force dvcstore <remote-storage-url>" to override the config)
+-->    once done check the config file in the .dvc dir it will show the core and remote url
+
+--> dvc commit,push the exp outcome you want to keep(if the desired outcome is not reproduced through dvc reproduce it with the "dvc exp apply<expname>"command)
 
